@@ -1,30 +1,3 @@
-import { ReactNode } from "react";
-
-export interface ReactComponentProps {
-  children: ReactNode
-}
-
-
-export interface GeneratedImageProps {
-  imageUrl: string
-  prompt: string
-  width?: string
-  height?: string
-  action: (imagePath: string) => void
-}
-
-export type RequestProps = {
-  prompt: string;
-}
-
-export type ImageProps = Pick<GeneratedImageProps, "imageUrl" | "prompt">
-
-Create a file constants/index.ts under the root directory
-Replace the content with the following:
-export const WIDTH = 512
-export const HEIGHT = 512
-Create a nice file under pages/api/generate-image.ts
-Replace the content of this file with the following:
 import { HEIGHT, WIDTH } from "@/constants";
 import { RequestProps } from "@/interfaces";
 import { NextApiRequest, NextApiResponse } from "next"
