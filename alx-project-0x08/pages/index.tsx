@@ -37,7 +37,7 @@
 
 
 
-import ImageCard from "@/components/common/ImageCard";
+import ImageCard from "@/components/common/imageCard";
 import { ImageProps } from "@/interfaces";
 import { useState } from "react";
 
