@@ -37,7 +37,7 @@
 
 
 
-import ImageCard from "@/components/common/ImageCard.tsx";
+import ImageCard from "@/components/common/imageCard";
 import { ImageProps } from "@/interfaces";
 import { useState } from "react";
 
@@ -55,6 +55,7 @@ const Home: React.FC = () => {
   const handleGenerateImage = async () => {
     console.log("Generating Images");
   };
+  
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100 p-4">
